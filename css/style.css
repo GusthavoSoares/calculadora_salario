@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Ysabeau+Infant:wght@1;100;400;700&display=swap');
+
+
+/* 1 rem = 16px */
+
+:root{
+    --fonteTitulos:'Ysabeau Infant';
+    --fonteTextos: 'Belanosima';
+    --corPrimaria:#FF7819;
+    --corSecundaria:#FFAF0D;
+    --corDestaque:#ca3d2b;
+    --corHover:#B33524;
+    --remMicro:0.5rem;
+    --remPequeno:1rem;
+    --remMedio:2rem;
+    --remGrande:3rem;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-color:var(--corSecundaria);
+    font-family:var(--fonteTextos);
+    font-weight:normal;
+    text-decoration:none;
+    list-style-type: none;
+}
+
+main{
+    padding:var(--remPequeno) 2%;
+}
+
+.sistema__Titulo{
+    font-size:var(--remMedio);
+    text-align:center;
+    color:var(--corDestaque);
+    background-color:var(--corPrimaria);
+    width:50%;
+    margin:0 auto;
+    border-radius:var(--remMicro);
+    padding:var(--remMicro) 0;
+    
+}
+
+
+.formulario__Cadastro{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-30%);
+    padding:30px;
+    border-radius:20px;
+    background:var(--corDestaque);
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    gap:5px;
+}
+.formulario__Titulo{
+    margin:var(--remPequeno) 0;
+    text-align:center;
+}
+
+

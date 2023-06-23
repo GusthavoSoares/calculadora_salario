@@ -11,25 +11,31 @@
 </head>
 <body>
     <main>
-        <h1>Calculadora de salário</h1>
-        <div>
-            <h2>Faça seu login</h2>
-        </div>
-        <form>
-            <legend></legend>
-            <fieldset>
-            </fieldset>
-            <legend></legend>
-            <fieldset>
-            </fieldset>
-            <fieldset>
-                <a href="cadastrar.html">Faça seu cadastro</a>
+        <h1  class="sistema__Titulo">Calculadora de Salário</h1>
+        
+        <form class="formulario__Cadastro"id="formulario" method="post">
+            <div class="formulario__Titulo">
+                <h2>Faça seu login</h2>
+            </div>
+            <label for="login">Login</label>
+            <div class="cadastro__Item">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" id="login" placeholder="Insira seu login">
+            </div>
+            <label for="senha">Senha</label>
+            <div class="cadastro__Item">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="senha" placeholder="Insira a sua senha">
+            </div>
+            <div class="cadastro__Enviar">
+                <a href="cadastrar.html">Registre-se</a>
                 <input type="submit" value="Logar">
-            </fieldset>
+            </div>
         </form>
 
         
     </main>
     <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/df85906e6a.js" crossorigin="anonymous"></script>
 </body>
 </html>
