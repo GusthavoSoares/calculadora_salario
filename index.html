@@ -7,7 +7,7 @@
     <meta name="author" content="Gusthavo Soares">
     <meta name="description" content="Esta é uma calculadora que irá facilitar seu dia a dia!">
     <meta name="keywords" content="calculadora, salario, trabalho, programacao_front_end">
-    <title>Calculadora de Salário TJRS</title>
+    <title>Calculadora de Salário - Login</title>
 </head>
 <body>
     <main>
@@ -15,21 +15,21 @@
         
         <form class="formulario__Cadastro"id="formulario" method="post">
             <div class="formulario__Titulo">
-                <h2>Faça seu login</h2>
+                <h2>Logar</h2>
             </div>
-            <label for="login">Login</label>
             <div class="cadastro__Item">
-                <i class="fa-solid fa-user"></i>
-                <input type="email" id="login" placeholder="Insira seu login">
+                <i class="fa-solid fa-user icone" ></i>
+                <input type="email" id="login" placeholder="Insira seu login" maxlength="30"class="item__Usuario">
+                
             </div>
-            <label for="senha">Senha</label>
             <div class="cadastro__Item">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" id="senha" placeholder="Insira a sua senha">
+                <i class="fa-solid fa-lock icone"></i>
+                <input type="password" id="senha" placeholder="Insira a sua senha" id="senha" class="item__Senha"  maxlength="8" required>
+                <i class="fa-solid fa-eye visualizar" id="olho"></i>
             </div>
             <div class="cadastro__Enviar">
-                <a href="cadastrar.html">Registre-se</a>
-                <input type="submit" value="Logar">
+                <a href="cadastrar.html" class="enviar__Link">Registrar</a>
+                <input  class="enviar__Botao" type="submit" value="Entrar">
             </div>
         </form>
 
